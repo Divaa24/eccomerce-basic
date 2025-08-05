@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <title>Cart - Sthira</title>
+</head>
+<body class="bg-[#f9f6f1] font-sans text-[#7f5f55]">
+
+  <!-- Shopping Cart + Order Summary -->
+  <section class="max-w-7xl mx-auto p-6">
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Cart Items List (col-span-2) -->
+      <div id="cart-items" class="lg:col-span-2 space-y-6 overflow-y-auto">
+      <!-- loadCart() akan menggantikan isi div ini, termasuk tombol Clear All -->
+      </div>
+
+      <!-- Order Summary Sidebar (col-span-1) -->
+      <aside class="lg:col-span-1 self-start sticky top-24">
+        <div class="bg-[#f4eee8] p-6 rounded-md text-[#a9957e] font-bold space-y-4">
+          <h3 class="text-xl">Order Summary</h3>
+          <!-- ringkasan item -->
+          <div id="order-summary" class="bg-white p-4 rounded-md text-gray-800 space-y-2"></div>
+          <!-- subtotal & total -->
+          <div class="mt-4 border-t pt-4 text-gray-700 space-y-1 font-medium">
+            <p>Subtotal: <span id="subtotal">Rp 0</span></p>
+            <p>Total:    <span id="total">Rp 0</span></p>
+            <a href="checkout.html">
+            <button id="checkout-btn" class="w-full bg-[#A79277] hover:bg-[#96715b] text-white py-3 rounded transition">Checkout</button>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Script untuk cart functionality -->
+  <script src="../script/cart.js" defer></script>
+</body>
+</html>

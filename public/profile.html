@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Nuosu+SIL&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rammetto+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap;" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">  
+  <title>Sthira</title>
+</head>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+
+  <div class="min-h-screen flex items-center justify-center bg-[#f9f6f1] px-4">
+    <div class="bg-[#F0EBE3] w-full max-w-2xl rounded-2xl shadow-md p-8 relative">
+  
+      <!-- Close Button -->
+      <a href="homepage.html" class="absolute top-4 right-4 text-[#a79277] text-2xl font-bold">&times;</a>
+
+      <h1 class="text-2xl font-bold text-[#7f5f55] mb-8">ACCOUNT SETTINGS</h1>
+  
+      <!-- Profile & Edit Section -->
+      <div class="flex justify-between items-center mb-8">
+        <div class="flex items-center gap-6">
+          <img src="../img/cindykim.jpeg" alt="Profile Picture" class="w-20 h-20 rounded-full object-cover">
+          <div>
+            <p class="text-sm text-[#7f5f55] font-semibold cursor-pointer hover:text-[#a79277]">Upload New Picture</p>
+            <p class="text-sm text-red-500 font-semibold mt-1 cursor-pointer hover:underline">Remove</p>
+          </div>
+        </div>
+        <button id="editBtn" class="bg-[#a79277] text-white font-semibold px-5 py-2 rounded-md hover:bg-[#998170] transition">Edit Profile</button>
+      </div>
+  
+      <!-- Form Data -->
+      <form id="profileForm" class="space-y-6">
+        <div class="flex justify-between border-b border-white pb-2">
+          <label class="text-[#7f5f55] text-sm">Name</label>
+          <input type="text" name="name" value="CINDYKIM" class="text-right bg-transparent text-sm text-[#7f5f55] font-bold focus:outline-none" disabled>
+        </div>
+        <div class="flex justify-between border-b border-white pb-2">
+          <label class="text-[#7f5f55] text-sm">Date of Birth</label>
+          <input type="text" name="dob" value="November 24, 2000" class="text-right bg-transparent text-sm text-[#7f5f55] font-bold focus:outline-none" disabled>
+        </div>
+        <div class="flex justify-between border-b border-white pb-2">
+          <label class="text-[#7f5f55] text-sm">Gender</label>
+          <input type="text" name="gender" value="Female" class="text-right bg-transparent text-sm text-[#7f5f55] font-bold focus:outline-none" disabled>
+        </div>
+        <div class="flex justify-between border-b border-white pb-2">
+          <label class="text-[#7f5f55] text-sm">Email</label>
+          <input type="email" name="email" value="Cindykim@gmail.com" class="text-right bg-transparent text-sm text-[#7f5f55] font-bold focus:outline-none" disabled>
+        </div>
+        <div class="flex justify-between border-b border-white pb-2">
+          <label class="text-[#7f5f55] text-sm">Phone Number</label>
+          <input type="text" name="phone" value="+62 34566789" class="text-right bg-transparent text-sm text-[#7f5f55] font-bold focus:outline-none" disabled>
+        </div>
+      </form>
+  
+      <!-- Action Buttons -->
+      <div class="mt-10 flex flex-col gap-3">
+        <a href="project.html" class="bg-[#f4cbd3] text-center text-white font-bold py-2 rounded-full hover:bg-[#f5bfc9] transition">LOG OUT</a>
+        <button id="saveBtn" class="bg-[#5e503f] text-white font-bold py-2 rounded-full hover:bg-[#4a4031] transition hidden">SAVE</button>
+        <a href="homepage.html" class="bg-[#f9f6f1] text-center text-[#d4c7b9] font-bold py-2 rounded-full">CONTINUE</a>
+      </div>
+    </div>
+  </div>
+  

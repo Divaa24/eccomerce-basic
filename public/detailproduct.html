@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Nuosu+SIL&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rammetto+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap;" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">  
+  <title>Sthira</title>
+</head>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <body  class="bg-[#f9f6f1] font-sans text-[#7f5f55]">
+
+    <!-- Navbar -->
+    <header>
+      <nav class="relative">
+      <div class="md:flex items-center justify-between p-4 shadow-sm bg-amber-50">
+        <!-- Logo and Primary Nav -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-8">
+            <h1 class="text-5xl text-rose-200" style="font-family: 'Mea Culpa', sans-serif;">Sthira</h1>
+            <div class="hidden md:flex space-x-6 font-semibold text-rose-200">
+              <a href="homepage.html" class="hover:underline">SHOP</a>
+              <a href="#" class="hover:underline">TRENDING NOW</a>
+            </div>
+          </div>
+          <!-- Mobile menu button -->
+          <button class="md:hidden text-rose-200 p-2" onclick="toggleMobileMenu()">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Search Bar - Hidden on mobile -->
+        <div class="hidden md:flex items-center bg-white rounded-full px-4 py-2 w-96">
+          <div class="flex space-x-2">
+            <button class="text-gray-600 hover:text-indigo-500">
+              <img src="../img/search (1).png" alt="Search" class="w-6 h-5">
+            </button>
+            <input type="text" placeholder="Search" class="bg-transparent w-full focus:outline-none placeholder-softPink" />
+          </div>
+        </div>
+
+        <!-- Right Nav Items - Hidden on mobile -->
+        <div class="hidden md:flex space-x-6 font-semibold text-rose-200">
+          <a href="#" class="text-sm">CONTACT</a>
+          <a href="cart.html">
+          <div class="ml-4">
+            <svg class="w-6 h-6 text-softPink" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.3 6.6A1 1 0 007 21h10a1 1 0 001-1.2L17 13M9 21a1 1 0 100-2 1 1 0 000 2zm6 0a1 1 0 100-2 1 1 0 000 2z"/>
+            </svg>
+          </div>
+          </a>
+          <img src="../img/cindykim.jpeg" alt="Profile" class="w-8 h-8 rounded-full object-coverflex-row ">
+        </div>
+      </div>
+
+      <!-- Mobile Menu - Hidden by default -->
+      <div id="mobileMenu" class="hidden md:hidden bg-amber-50 w-full">
+        <div class="px-4 py-2 space-y-3">
+          <a href="#" class="block text-rose-200 hover:underline">SHOP</a>
+          <a href="#" class="block text-rose-200 hover:underline">TRENDING NOW</a>
+          <a href="#" class="block text-rose-200 hover:underline">CONTACT</a>
+          <!-- Mobile Search Bar -->
+          <div class="flex items-center bg-white rounded-full px-4 py-2">
+            <div class="flex space-x-2 w-full">
+              <button class="text-gray-600 hover:text-indigo-500">
+                <img src="../img/search (1).png" alt="Search" class="w-6 h-5">
+              </button>
+              <input type="text" placeholder="Search" class="bg-transparent w-full focus:outline-none placeholder-softPink" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+    <!-- Tombol Kembali ke Homepage --> 
+  <a href="homepage.html" class="flex items mt-4 ml-4"
+    class="flex items-center justify-center w-10 h-10 text-[#a79277] hover:bg-[#f9f6f1] shadow transition">
+    <span class="text-2xl font-bold">×</span>
+</a>
+
+
+    
+
+    <div id="product"></div>
+
+  <!-- FLOWBITE JS -->
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="../script/detail.js"></script>
+  <script src="../script/cart.js"></script>
+</body>
+</html>
